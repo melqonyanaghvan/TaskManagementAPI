@@ -199,19 +199,6 @@ Expected response:
 ]
 }
 
-
-## 🏛️ Project Structure
-
-TaskManagementProject/
-├── TaskManagement.Domain/ # Domain entities and interfaces
-├── TaskManagement.Application/ # Business logic, DTOs, services
-├── TaskManagement.Infrastructure/ # Data access, repositories, EF Core
-├── TaskManagement.API/ # REST API, controllers, middleware
-├── NotificationService.API/ # Notification microservice
-├── docker-compose.yml # Docker orchestration
-└── README.md
-
-
 ## 🔐 User Roles
 
 ### Admin
