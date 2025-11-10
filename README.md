@@ -2,7 +2,7 @@
 
 A microservices-based task management system with Clean Architecture, JWT authentication, Redis caching, and Docker orchestration.
 
-## 🏗️ Architecture
+## Architecture
 
 This project implements **Clean Architecture** with two main microservices:
 
@@ -15,7 +15,7 @@ This project implements **Clean Architecture** with two main microservices:
 
 The services communicate via **synchronous HTTP calls**. When a task is assigned to a user, TaskManagement.API sends an HTTP request to NotificationService.API to log the notification.
 
-## 🛠️ Technologies
+## Technologies
 
 - **Backend:** ASP.NET Core 9.0
 - **Architecture:** Clean Architecture (Domain, Application, Infrastructure, API)
@@ -26,7 +26,7 @@ The services communicate via **synchronous HTTP calls**. When a task is assigned
 - **Containerization:** Docker + Docker Compose
 - **Documentation:** Swagger/OpenAPI
 
-## 🚀 Quick Start with Docker
+## Quick Start with Docker
 
 ### Prerequisites
 
@@ -107,7 +107,7 @@ docker-compose down -v
 | GET | `/api/Notifications/all` | Get all notifications | No |
 | GET | `/api/Notifications/user/{userId}` | Get user notifications | No |
 
-## 🧪 Testing Example
+## Testing Example
 
 ### 1. Register Admin User
 
@@ -199,7 +199,7 @@ Expected response:
 ]
 }
 
-## 🔐 User Roles
+## User Roles
 
 ### Admin
 - Full access to all resources
@@ -219,7 +219,7 @@ Expected response:
 - Cannot create projects or tasks
 - Cannot assign tasks
 
-## 🐳 Docker Commands
+## Docker Commands
 
 Start services
 docker-compose up -d
@@ -243,7 +243,7 @@ Check running containers
 docker-compose ps
 
 
-## 📦 Local Development (Without Docker)
+## Local Development (Without Docker)
 
 ### Prerequisites
 
@@ -308,19 +308,18 @@ Redis connection string format:
 
 redis:6379
 
+## Features Implemented
 
-## 📊 Features Implemented
-
-- ✅ **Clean Architecture** with clear separation of concerns
-- ✅ **JWT Authentication** with role-based authorization
-- ✅ **Custom Middleware** (JWT validation, role authorization, exception handling)
-- ✅ **Database Transactions** for data consistency
-- ✅ **Redis Caching** for improved performance
-- ✅ **Pagination and Filtering** for large datasets
-- ✅ **Microservices Communication** via HTTP
-- ✅ **Docker Orchestration** with docker-compose
-- ✅ **Swagger Documentation** for both APIs
-- ✅ **CRUD Operations** for all entities
+- **Clean Architecture** with clear separation of concerns
+- **JWT Authentication** with role-based authorization
+- **Custom Middleware** (JWT validation, role authorization, exception handling)
+- **Database Transactions** for data consistency
+- **Redis Caching** for improved performance
+- **Pagination and Filtering** for large datasets
+- **Microservices Communication** via HTTP
+- **Docker Orchestration** with docker-compose
+- **Swagger Documentation** for both APIs
+- **CRUD Operations** for all entities
 
 ## Contributing
 
